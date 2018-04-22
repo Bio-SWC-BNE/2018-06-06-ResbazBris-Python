@@ -1,7 +1,7 @@
 ---
 layout: workshop      # DON'T CHANGE THIS.
 carpentry: "swc"    # what kind of Carpentry (must be either "lc" or "dc" or "swc")
-venue: "R Software Carpentry- Research Bazaar Brisbane <br>  S07_2.18 - Griffith Southbank Campus"        # brief name of host site without address (e.g., "Euphoric State University")
+venue: "Python Software Carpentry- Research Bazaar Brisbane <br>  S07_2.18 - Griffith Southbank Campus"        # brief name of host site without address (e.g., "Euphoric State University")
 address: "Southbank, Brisbane, QLD"      # full street address of workshop (e.g., "Room A, 123 Forth Street, Blimingen, Euphoria")
 country: "au"      # lowercase two-letter ISO country code such as "fr" (see https://en.wikipedia.org/wiki/ISO_3166-1)
 language: "en"     # lowercase two-letter ISO language code such as "fr" (see https://en.wikipedia.org/wiki/ISO_639-1)
@@ -279,6 +279,7 @@ eventbrite:           # optional: alphanumeric key for Eventbrite registration, 
 <p>unzip shell-novice-data.zip</p>
 <br/>
 <br/>
+{% comment %}
 <h3>Second Lesson: R </h3>
 <p></p>
 <p>Lessons online : <a href="http://swcarpentry.github.io/r-novice-gapminder/">http://swcarpentry.github.io/r-novice-gapminder/</a></p>
@@ -296,6 +297,29 @@ eventbrite:           # optional: alphanumeric key for Eventbrite registration, 
 <p>wget https://raw.githubusercontent.com/resbaz/r-novice-gapminder-files/master/data/gapminder-FiveYearData.csv</p>
 <br/>
 <br/>
+  <p>
+{% endcomment %}
+	  <p>
+<p><h3>Second lesson: Python</h3></p>
+<p></p>
+<p>Lessons online : <a href="https://swcarpentry.github.io/python-novice-gapminder/">https://swcarpentry.github.io/python-novice-gapminder/</a></p>
+<p>Data to download: <a href="https://swcarpentry.github.io/python-novice-gapminder/files/python-novice-gapminder-data.zip">https://swcarpentry.github.io/python-novice-gapminder/files/python-novice-gapminder-data.zip</a></p>
+<p>You need to download to your computer, use the following...</p>
+ <br/> 
+<p>Please unzip after downloading. If you are in Mac or Linux, you can use the following commands:</p>
+<p></p>
+<p>Windows: you can download it and move it to the folder you plan on working in, then unzip it by right clicking</p>
+<p></p>
+<p>Mac:</p>
+<p>curl -O https://swcarpentry.github.io/python-novice-gapminder/files/python-novice-gapminder-data.zip/p>
+<p>unzip python-novice-gapminder-data.zip</p>
+<p></p>
+<p>Linux:</p>
+<p>wget https://swcarpentry.github.io/python-novice-gapminder/files/python-novice-gapminder-data.zip</p>
+<p>unzip python-novice-gapminder-data.zip</p>
+
+  </p>
+  <br/>
   <p>
 <p><h3>Third lesson: Git</h3></p>
 <p></p>
@@ -336,7 +360,7 @@ eventbrite:           # optional: alphanumeric key for Eventbrite registration, 
   that may be useful on the
   <a href = "{{site.swc_github}}/workshop-template/wiki/Configuration-Problems-and-Solutions">Configuration Problems and Solutions wiki page</a>.
 </p>
-
+{% comment %}
 <div id="r"> <!-- Start of 'R' section. -->
   <h3>R</h3>
 
@@ -387,7 +411,99 @@ eventbrite:           # optional: alphanumeric key for Eventbrite registration, 
     </div>
   </div>
 </div> <!-- End of 'R' section. -->
+{% endcomment %}
+<div id="python"> {% comment %} Start of 'Python' section. Remove the third paragraph if
+           the workshop will teach Python using something other than
+           the Jupyter notebook.
+           Details at https://jupyter-notebook.readthedocs.io/en/stable/notebook.html#browser-compatibility {% endcomment %}
+  <h3>Python</h3>
 
+  <p>
+    <a href="http://python.org">Python</a> is a popular language for
+    research computing, and great for general-purpose programming as
+    well.  Installing all of its research packages individually can be
+    a bit difficult, so we recommend
+    <a href="https://www.anaconda.com/distribution/">Anaconda</a>,
+    an all-in-one installer.
+  </p>
+
+    <p>
+      Regardless of how you choose to install it,
+      <strong>please make sure you install Python version 3.x</strong>
+      (e.g., 3.6 is fine).
+    </p>
+
+    <p>
+      We will teach Python using the <a href="https://jupyter.org/">Jupyter notebook</a>,
+      a programming environment that runs in a web browser. For this to work you will need a reasonably
+      up-to-date browser. The current versions of the Chrome, Safari and
+      Firefox browsers are all
+      <a href="https://jupyter-notebook.readthedocs.io/en/stable/notebook.html#browser-compatibility">supported</a>
+      (some older browsers, including Internet Explorer version 9
+      and below, are not).
+    </p>
+
+  <div class="row">
+    <div class="col-md-4">
+      <h4 id="python-windows">Windows</h4>
+      <a href="https://www.youtube.com/watch?v=xxQ0mzZ8UvA">Video Tutorial</a>
+      <ol>
+        <li>Open <a href="https://www.anaconda.com/download/#windows">https://www.anaconda.com/download/#windows</a> with your web browser.</li>
+        <li>Download the Python 3 installer for Windows.</li>
+        <li>Install Python 3 using all of the defaults for installation <em>except</em> make sure to check <strong>Make Anaconda the default Python</strong>.</li>
+      </ol>
+    </div>
+    <div class="col-md-4">
+      <h4 id="python-macosx">macOS</h4>
+      <a href="https://www.youtube.com/watch?v=TcSAln46u9U">Video Tutorial</a>
+      <ol>
+        <li>Open <a href="https://www.anaconda.com/download/#macos">https://www.anaconda.com/download/#macos</a> with your web browser.</li>
+        <li>Download the Python 3 installer for OS X.</li>
+        <li>Install Python 3 using all of the defaults for installation.</li>
+      </ol>
+    </div>
+    <div class="col-md-4">
+      <h4 id="python-linux">Linux</h4>
+      <ol>
+        <li>Open <a href="https://www.anaconda.com/download/#linux">https://www.anaconda.com/download/#linux</a> with your web browser.</li>
+        <li>Download the Python 3 installer for Linux.<br>
+          (The installation requires using the shell. If you aren't
+           comfortable doing the installation yourself
+           stop here and request help at the workshop.)
+        </li>
+        <li>
+          Open a terminal window.
+        </li>
+        <li>
+          Type <pre>bash Anaconda3-</pre> and then press
+          tab. The name of the file you just downloaded should
+          appear. If it does not, navigate to the folder where you
+          downloaded the file, for example with:
+          <pre>cd Downloads</pre>
+          Then, try again.
+        </li>
+        <li>
+          Press enter. You will follow the text-only prompts. To move through
+          the text, press the space key. Type <code>yes</code> and
+          press enter to approve the license. Press enter to approve the
+          default location for the files. Type <code>yes</code> and
+          press enter to prepend Anaconda to your <code>PATH</code>
+          (this makes the Anaconda distribution the default Python).
+        </li>
+        <li>
+          Close the terminal window.
+        </li>
+      </ol>
+    </div>
+  </div>
+
+  <p>
+  Once you are done installing the software listed above,
+  please go to <a href="setup/index.html">this page</a>,
+  which has instructions on how to test that everything was installed correctly.
+  </p>
+
+</div> {% comment %} End of 'Python' section. {% endcomment %}
 
 
 <div id="shell"> {% comment %} Start of 'shell' section. {% endcomment %}
