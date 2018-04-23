@@ -1,7 +1,7 @@
 ---
 layout: workshop      # DON'T CHANGE THIS.
 carpentry: "swc"    # what kind of Carpentry (must be either "lc" or "dc" or "swc")
-venue: "Python Software Carpentry- ResBaz Brisbane <br><br>  Griffith Southbank Campus - S07_2.18 (Behind Ship Inn) "        # brief name of host site without address (e.g., "Euphoric State University")
+venue: "Python Software Carpentry- ResBaz Brisbane <br><br>  Griffith Southbank Campus - S07_2.18 "        # brief name of host site without address (e.g., "Euphoric State University")
 address: "Southbank, Brisbane, QLD"      # full street address of workshop (e.g., "Room A, 123 Forth Street, Blimingen, Euphoria")
 country: "au"      # lowercase two-letter ISO country code such as "fr" (see https://en.wikipedia.org/wiki/ISO_3166-1)
 language: "en"     # lowercase two-letter ISO language code such as "fr" (see https://en.wikipedia.org/wiki/ISO_639-1)
@@ -37,7 +37,7 @@ eventbrite:           # optional: alphanumeric key for Eventbrite registration, 
   scrolling="auto">
 </iframe>
 {% endcomment %}
-
+<h2 id="general"><a href='https://resbaz.github.io/resbaz2018/brisbane/'>Research Bazaar Website: resbaz.github.io/resbaz2018/brisbane/</a></h2>
 
 <h2 id="general">General Information</h2>
 
